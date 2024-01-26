@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Quiz Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Rubik', Medium;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            margin-top: 20px;
+            margin-bottom: 0px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .question h6 {
+            align-items: center;
+            margin-bottom: 0px;
+        }
+
+        .options {
+            margin-top: 10px;
+        }
+
+        .form-check {
+            margin-bottom: 0px;
+            padding-left: 0;
+        }
+
+        .answer-box {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .question-square-box {
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(to right,#0157c0, #2680EB);
+            color: white;
+            text-align: center;
+            line-height: 35px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+
+        .answer-box .square-box {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(to right, #FF6700, #FE8E0C);
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+
+        .rectangle-box {
+            flex: 1;
+        }
+
+        .line-divider {
+            border-top: 1px solid #ccc;
+            margin: 10px 0;
+        }
+
+        .submit-btn {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px;
+            font-size: 15px;
+            width: 50%;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #629664;
+        }
+
+        section {
+            word-wrap: break-word;
+        }
+        .selected-answer {
+            background-color: #8FED8F; /* Light green for selected answers */
+        }
+
+        .wrong-answer {
+            background-color: #FF7F7F; /* Light red for wrong answers */
+        }
+
+        .correct-answer {
+            background-color: #76EE00; /* Light green for correct answers */
+        }
+
+        .close-btn {
+            display: block;
+            margin: 20px auto;
+            margin-top: 30px;
+            padding: 10px;
+            width: 50%;
+            font-size: 15px;
+            background: linear-gradient(to right #0158b4, #007BFF);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <h4>Hi User!</h4>
+    <section>You are having pending items </section>
+    <iframe src="https://www.youtube.com/embed/eqzAFQ67t0M?si=2zSiEIANGYQtn8EF" frameborder="0"></iframe>
+
+    <div class="question">
+        <div class="answer-box">
+            <div class="question-square-box">Q1</div>
+            <div class="rectangle-box">
+                <h6>What is the capital of France?</h6>
+            </div>
+        </div>
+        <div class="options">
+            <div class="form-check">
+                <div class="answer-box">
+                    <div class="square-box">A</div>
+                    <div class="rectangle-box">Paris</div>
+                </div>
+            </div>
+            <div class="line-divider"></div>
+            <div class="form-check">
+                <div class="answer-box">
+                    <div class="square-box">B</div>
+                    <div class="rectangle-box">London</div>
+                </div>
+            </div>
+            <div class="line-divider"></div>
+            <div class="form-check">
+                <div class="answer-box">
+                    <div class="square-box">C</div>
+                    <div class="rectangle-box">Berlin</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="answer-box">
+            <div class="question-square-box">Q2</div>
+            <div class="rectangle-box">
+                <h6>Which planet is known as the Red Planet?</h6>
+            </div>
+        </div>
+        <div class="options">
+            <div class="form-check">
+                <div class="answer-box">
+                    <div class="square-box">A</div>
+                    <div class="rectangle-box">Mars</div>
+                </div>
+            </div>
+            <div class="line-divider"></div>
+            <div class="form-check">
+                <div class="answer-box">
+                    <div class="square-box">B</div>
+                    <div class="rectangle-box">Venus</div>
+                </div>
+            </div>
+            <div class="line-divider"></div>
+            <div class="form-check">
+                <div class="answer-box">
+                    <div class="square-box">C</div>
+                    <div class="rectangle-box">Jupiter</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="answer-box">
+            <div class="question-square-box">Q3</div>
+            <div class="rectangle-box">
+                <h6>What is the largest mammal on Earth?</h6>
+            </div>
+        </div>
+        <div class="options">
+            <div class="form-check">
+                <div class="answer-box">
+                    <div class="square-box">A</div>
+                    <div class="rectangle-box">Elephant</div>
+                </div>
+            </div>
+            <div class="line-divider"></div>
+            <div class="form-check">
+                <div class="answer-box">
+                    <div class="square-box">B</div>
+                    <div class="rectangle-box">Blue Whale</div>
+                </div>
+            </div>
+            <div class="line-divider"></div>
+            <div class="form-check">
+                <div class="answer-box">
+                    <div class="square-box">C</div>
+                    <div class="rectangle-box">Giraffe</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="answer-box">
+            <div class="question-square-box">Q4</div>
+            <div class="rectangle-box">
+                <h6>Who wrote the play "Romeo and Juliet"?</h6>
+            </div>
+        </div>
+        <div class="options">
+            <div class="form-check">
+                <div class="answer-box">
+                    <div class="square-box">A</div>
+                    <div class="rectangle-box">William Shakespeare</div>
+                </div>
+            </div>
+            <div class="line-divider"></div>
+            <div class="form-check">
+                <div class="answer-box">
+                    <div class="square-box">B</div>
+                    <div class="rectangle-box">Jane Austen</div>
+                </div>
+            </div>
+            <div class="line-divider"></div>
+            <div class="form-check">
+                <div class="answer-box">
+                    <div class="square-box">C</div>
+                    <div class="rectangle-box">Charles Dickens</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="submit-btn" onclick="markAnswers(event)">Submit</button>
+
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const questions = document.querySelectorAll('.question');
+    let canSelectAnswer = true;
+
+    document.querySelector('#container').addEventListener('click', function (event) {
+        const selectedAnswer = event.target.closest('.options .answer-box');
+
+        if (selectedAnswer && canSelectAnswer) {
+            const questionContainer = selectedAnswer.closest('.question');
+
+            if (!questionContainer.classList.contains('answered')) {
+                questionContainer.querySelectorAll('.options .answer-box').forEach(function (answer) {
+                    answer.classList.remove('selected-answer');
+                    answer.classList.remove('wrong-answer');
+                });
+
+                selectedAnswer.classList.add('selected-answer');
+
+                const allQuestionsAnswered = Array.from(questions).every(function (question) {
+                    return question.querySelector('.options .selected-answer');
+                });
+
+                document.querySelector('.submit-btn').disabled = !allQuestionsAnswered;
+            }
+        }
+    });
+
+    document.querySelector('.submit-btn').addEventListener('click', function (event) {
+        event.preventDefault();
+        markAnswers(event);
+    });
+
+    function markAnswers(event) {
+        // Prevent default form submission behavior
+        if (event) {
+            event.preventDefault();
+        }
+
+        const answers = {
+            q1: 'A',
+            q2: 'A',
+            q3: 'B',
+            q4: 'A'
+        };
+
+        let correctAnswers = 0;
+
+        document.querySelectorAll('.question').forEach(function (question, i) {
+            const selectedAnswer = question.querySelector('.options .selected-answer .square-box').textContent.trim();
+            const correctAnswer = answers['q' + (i + 1)];
+
+            const answerBox = question.querySelector('.options .selected-answer');
+
+            if (selectedAnswer === correctAnswer) {
+                answerBox.classList.add('correct-answer');
+                correctAnswers++;
+            } else {
+                answerBox.classList.add('wrong-answer');
+            }
+
+            question.classList.add('answered');
+        });
+
+        const totalQuestions = document.querySelectorAll('.question').length;
+        const score = (correctAnswers / totalQuestions) * 100;
+        const scoreElement = document.createElement('span');
+        scoreElement.id = 'score';
+        scoreElement.textContent = score.toFixed(2) + '%';
+
+        const scorecard = document.createElement('div');
+        scorecard.classList.add('question');
+        scorecard.innerHTML = '<h6>Your Score: </h6>';
+        scorecard.querySelector('h6').appendChild(scoreElement);
+        document.querySelector('#container').appendChild(scorecard);
+
+        // Disable the submit button
+        const submitButton = document.querySelector('.submit-btn');
+        submitButton.disabled = true;
+        submitButton.style.display = 'none';
+
+        if (!document.querySelector('.close-btn')) {
+            const closeButton = document.createElement('button');
+            closeButton.classList.add('close-btn', 'btn', 'btn-primary');
+            closeButton.textContent = 'Close';
+            closeButton.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent default behavior
+                console.log("Close button clicked");
+                // You can add code here to handle closing the quiz or redirecting to another page
+            });
+            document.querySelector('#container').appendChild(closeButton);
+        }
+
+        // Update the flag after markAnswers has executed
+        canSelectAnswer = false;
+    }
+});
+
+</script>
+
+</body>
+</html>
