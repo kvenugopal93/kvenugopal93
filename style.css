@@ -33,18 +33,6 @@
   --dl-space-space-fourunits: 64px;
   --dl-space-space-threeunits: 48px;
   --dl-space-space-oneandhalfunits: 24px;
-  --dl-color-www.indusappstore.com-gray: rgba(126, 126, 126, 1);
-  --dl-color-www.indusappstore.com-nero: rgba(255, 255, 255, 1);
-  --dl-color-www.indusappstore.com-rose: rgba(223, 0, 122, 1);
-  --dl-color-www.indusappstore.com-black: rgba(0, 0, 0, 1);
-  --dl-color-www.indusappstore.com-silver: rgba(187, 187, 187, 1);
-  --dl-color-www.indusappstore.com-sanjuan: rgba(53, 69, 112, 1);
-  --dl-color-www.indusappstore.com-stratos: rgba(2, 23, 76, 1);
-  --dl-color-www.indusappstore.com-gulfblue: rgba(3, 24, 77, 1);
-  --dl-color-www.indusappstore.com-linkwater: rgba(233, 238, 248, 1);
-  --dl-color-www.indusappstore.com-titanwhite: rgba(242, 243, 254, 1);
-  --dl-color-www.indusappstore.com-catskillwhite: rgba(227, 233, 241, 1);
-  --dl-color-www.indusappstore.com-linearyellowseablazeorangerose: rgba(253, 171, 4, 1);
 }
 .button {
   color: var(--dl-color-gray-black);
@@ -103,67 +91,4 @@
   line-height: 1.15;
   text-transform: none;
   text-decoration: none;
-}
-.www\.indusappstore\.comPoppinsSemiBold20upper {
-  font-size: 20px;
-  font-style: normal;
-  font-family: Poppins;
-  font-weight: 600px;
-  font-stretch: normal;
-}
-.www\.indusappstore\.comPoppinsMedium20 {
-  font-size: 20px;
-  font-style: normal;
-  font-family: Poppins;
-  font-weight: 500px;
-  font-stretch: normal;
-}
-.www\.indusappstore\.comPoppinsSemiBold18upper {
-  font-size: 18px;
-  font-style: normal;
-  font-family: Poppins;
-  font-weight: 600px;
-  font-stretch: normal;
-}
-.www\.indusappstore\.comPoppinsMedium18 {
-  font-size: 18px;
-  font-style: normal;
-  font-family: Poppins;
-  font-weight: 500px;
-  font-stretch: normal;
-}
-.www\.indusappstore\.comPoppinsMedium201 {
-  font-size: 20px;
-  font-style: normal;
-  font-family: Poppins;
-  font-weight: 500px;
-  font-stretch: normal;
-}
-.www\.indusappstore\.comPoppinsLight16 {
-  font-size: 16px;
-  font-style: normal;
-  font-family: Poppins;
-  font-weight: 300px;
-  font-stretch: normal;
-}
-.www\.indusappstore\.comPoppinsMedium12upper {
-  font-size: 12px;
-  font-style: normal;
-  font-family: Poppins;
-  font-weight: 500px;
-  font-stretch: normal;
-}
-.www\.indusappstore\.comPoppinsRegular12 {
-  font-size: 12px;
-  font-style: normal;
-  font-family: Poppins;
-  font-weight: 400px;
-  font-stretch: normal;
-}
-.www\.indusappstore\.comPoppinsMedium16 {
-  font-size: 16px;
-  font-style: normal;
-  font-family: Poppins;
-  font-weight: 500px;
-  font-stretch: normal;
 }
